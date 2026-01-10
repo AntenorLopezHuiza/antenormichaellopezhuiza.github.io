@@ -2,131 +2,76 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Antenor López Huiza | Cursos y Asesorías</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Antenor López Huiza | Economista & Investigador</title>
 
 <style>
-:root{
-  --azul-oscuro:#0f172a;
-  --azul:#1e3a8a;
-  --azul-claro:#2563eb;
-  --blanco:#ffffff;
-  --gris:#e5e7eb;
-}
-
 body{
   margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  background:linear-gradient(135deg,var(--azul-oscuro),var(--azul));
-  color:var(--blanco);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background:#0f2a44;
+  color:#f1f5f9;
 }
 
-/* HEADER */
 header{
-  padding:60px 20px;
-}
-.perfil{
-  max-width:1200px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:40px;
+  display:flex;
   align-items:center;
-}
-.perfil img{
-  width:100%;
-  max-width:300px;
-  border-radius:20px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-.perfil h1{
-  font-size:2.6rem;
-}
-.perfil p{
-  font-size:1.1rem;
-  line-height:1.6;
+  padding:40px;
+  background:linear-gradient(135deg,#0f2a44,#1e3a8a);
 }
 
-/* NAV */
-nav{
-  background:rgba(0,0,0,0.35);
-  text-align:center;
-  padding:15px;
-}
-nav a{
-  color:white;
-  margin:0 15px;
-  text-decoration:none;
-  font-weight:bold;
-}
-nav a:hover{
-  color:#93c5fd;
+header img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  margin-right:40px;
+  border:4px solid #38bdf8;
 }
 
-/* SECTIONS */
 section{
-  max-width:1200px;
-  margin:auto;
-  padding:60px 20px;
-}
-h2{
-  text-align:center;
-  font-size:2.2rem;
-  margin-bottom:40px;
+  padding:50px;
 }
 
-/* GRID */
+h1,h2,h3{
+  color:#38bdf8;
+}
+
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
   gap:25px;
 }
 
-/* CARD */
 .card{
-  background:rgba(255,255,255,0.1);
-  padding:20px;
-  border-radius:18px;
-  box-shadow:0 10px 25px rgba(0,0,0,0.35);
-}
-.card h3{
-  margin-top:0;
-}
-.card p{
-  font-size:0.95rem;
-}
-
-/* VIDEOS */
-iframe{
-  width:100%;
-  height:180px;
+  background:#102f4e;
+  padding:25px;
   border-radius:12px;
-  margin-top:10px;
+  transition:transform 0.3s, box-shadow 0.3s;
 }
 
-/* LINKS */
-.links a{
-  display:block;
-  color:#bfdbfe;
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 12px 25px rgba(56,189,248,0.4);
+}
+
+a{
+  color:#38bdf8;
   text-decoration:none;
+}
+
+a:hover{
+  color:#facc15;
+}
+
+.small{
+  font-size:14px;
+  opacity:0.85;
   margin-top:8px;
 }
-.links a:hover{
-  text-decoration:underline;
-}
 
-/* CONTACTO */
-.contacto{
-  text-align:center;
-  font-size:1.1rem;
-}
-
-/* FOOTER */
 footer{
-  background:rgba(0,0,0,0.4);
+  background:#081a2b;
+  padding:30px;
   text-align:center;
-  padding:25px;
-  font-size:0.9rem;
 }
 </style>
 </head>
@@ -134,100 +79,127 @@ footer{
 <body>
 
 <header>
-  <div class="perfil">
-    <div>
-      <h1>Antenor Michael López Huiza</h1>
-      <p>
-        Economista, analista de datos y formador académico.
-        Especializado en Excel aplicado, análisis de datos con Python y R,
-        machine learning y procesos electorales.
-      </p>
-      <p>
-        Mi objetivo es compartir conocimiento práctico,
-        motivar el aprendizaje continuo y fortalecer la toma de decisiones.
-      </p>
-    </div>
-    <img src="https://via.placeholder.com/300x300.png?text=Tu+Foto" alt="Foto Antenor">
+  <img src="https://via.placeholder.com/180" alt="Antenor López Huiza">
+  <div>
+    <h1>Antenor Michael López Huiza</h1>
+    <p>Economista | Analista de Datos | Investigador | Docente</p>
+    <p class="small">
+      Especialista en análisis económico aplicado, ciencia de datos, procesos electorales y formación académica con enfoque práctico.
+    </p>
   </div>
 </header>
 
-<nav>
-  <a href="#cursos">Cursos</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#contacto">Contacto</a>
-</nav>
+<!-- CURSOS Y VIDEOS -->
+<section>
+<h2>📊 Cursos y Videos Educativos</h2>
 
-<section id="cursos">
-  <h2>Cursos</h2>
+<div class="grid">
 
-  <div class="grid">
+<div class="card">
+<h3>Análisis de Datos con Python</h3>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=VIDEO1" target="_blank">Introducción a Python</a><div class="small">Aprende desde cero ciencia de datos aplicada</div></li>
+<li><a href="#">Regresión y ML</a><div class="small">Modelos explicados paso a paso</div></li>
+<li><a href="#">Visualización</a><div class="small">Datos que cuentan historias</div></li>
+</ul>
+</div>
 
-    <div class="card">
-      <h3>Excel para Economistas</h3>
-      <p>Análisis económico, indicadores, proyecciones y automatización.</p>
+<div class="card">
+<h3>Análisis de Datos con RStudio</h3>
+<ul>
+<li><a href="#">Estadística aplicada</a><div class="small">R para economistas e investigadores</div></li>
+<li><a href="#">Econometría</a><div class="small">Modelos reales con datos reales</div></li>
+</ul>
+</div>
 
-      <!-- VIDEOS -->
-      <iframe src="https://www.youtube.com/embed/VIDEO1"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO2"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO3"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO4"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO5"></iframe>
+<div class="card">
+<h3>Excel para Economistas y Administradores</h3>
+<ul>
+<li><a href="#">Excel básico</a><div class="small">Bases sólidas para análisis</div></li>
+<li><a href="#">Indicadores de gestión</a><div class="small">Decisiones con datos</div></li>
+<li><a href="#">Proyecciones</a><div class="small">Planeamiento económico</div></li>
+</ul>
+</div>
 
-      <!-- DOCUMENTOS -->
-      <div class="links">
-        <a href="documentos/excel_economistas.pdf">📄 Material del curso</a>
-      </div>
-    </div>
+<div class="card">
+<h3>Power BI</h3>
+<ul>
+<li><a href="#">Dashboards</a><div class="small">Visualiza y comunica resultados</div></li>
+<li><a href="#">Modelado de datos</a><div class="small">Inteligencia de negocios</div></li>
+</ul>
+</div>
 
-    <div class="card">
-      <h3>Análisis de Datos con Python</h3>
-      <p>Pandas, visualización, modelos supervisados y ML.</p>
+<div class="card">
+<h3>Procesos Electorales 2026</h3>
+<ul>
+<li><a href="#">Sistema electoral peruano</a><div class="small">Marco legal y análisis técnico</div></li>
+<li><a href="#">Análisis de resultados</a><div class="small">Datos electorales explicados</div></li>
+</ul>
+</div>
 
-      <iframe src="https://www.youtube.com/embed/VIDEO1"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO2"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO3"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO4"></iframe>
-      <iframe src="https://www.youtube.com/embed/VIDEO5"></iframe>
-
-      <div class="links">
-        <a href="documentos/python_datos.pdf">📄 Guía práctica</a>
-      </div>
-    </div>
-
-  </div>
+</div>
 </section>
 
-<section id="servicios">
-  <h2>Servicios</h2>
+<!-- BLOG -->
+<section>
+<h2>📝 Blog de Escritos y Documentos</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <div class="card">
-      <h3>Asesoría en Análisis de Datos</h3>
-      <p>Apoyo académico y empresarial en análisis estadístico y ML.</p>
-    </div>
+<div class="card">
+<h3>Microeconomía Aplicada</h3>
+<p class="small">Análisis de mercados, decisiones y bienestar económico.</p>
+<a href="#">Ver artículos</a>
+</div>
 
-    <div class="card">
-      <h3>Asesoría en Procesos Electorales</h3>
-      <p>Normativa, análisis electoral y gestión pública.</p>
-    </div>
+<div class="card">
+<h3>Macroeconomía Aplicada</h3>
+<p class="small">Inflación, crecimiento, políticas públicas.</p>
+<a href="#">Ver investigaciones</a>
+</div>
 
-  </div>
+<div class="card">
+<h3>Investigaciones</h3>
+<p class="small">Ensayos académicos y análisis empíricos.</p>
+<a href="#">Acceder a documentos</a>
+</div>
+
+<div class="card">
+<h3>Habilidades Blandas</h3>
+<p class="small">Liderazgo, pensamiento crítico y ética profesional.</p>
+<a href="#">Leer reflexiones</a>
+</div>
+
+<div class="card">
+<h3>Poemas Económicos</h3>
+<p class="small">Economía, vida y esperanza en versos.</p>
+<a href="#">Leer poemas</a>
+</div>
+
+<div class="card">
+<h3>Ajedrez</h3>
+<p class="small">Estrategia, lógica y toma de decisiones.</p>
+<a href="#">Explorar contenido</a>
+</div>
+
+</div>
 </section>
 
-<section id="contacto">
-  <h2>Contacto</h2>
-  <div class="contacto">
-    <p>📧 asesoriaacademica@gmail.com</p>
-    <p>📱 WhatsApp: 973 932 328</p>
-  </div>
+<!-- CONTACTO -->
+<section>
+<h2>📩 Contacto y Asesorías</h2>
+<p>
+¿Deseas cursos personalizados, asesorías académicas o apoyo en investigación?
+</p>
+<p>
+📧 <b>asesoriaacademica.economia@gmail.com</b><br>
+📱 WhatsApp: <b>973 932 328</b>
+</p>
 </section>
 
 <footer>
-  © 2026 · Antenor Michael López Huiza · Aprender transforma realidades
+© 2026 Antenor Michael López Huiza | Economía • Datos • Investigación
 </footer>
 
 </body>
 </html>
-
-
