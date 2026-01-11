@@ -2,273 +2,342 @@
 <html lang="es">
 <head>
 
-  <!-- =====================================================
-       CONFIGURACIÓN BASE (CRÍTICA PARA BUSCADORES)
-       ===================================================== -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Antenor Michael López Huiza | Economista | Análisis de Datos y Econometría</title>
+<title>
+Antenor Michael López Huiza | Economista | Cursos, Investigación y Procesos Electorales
+</title>
 
-  <!-- =====================================================
-       SEO PRINCIPAL (GOOGLE / BING / EDGE)
-       =====================================================
-       description: texto que aparece en Google
-       keywords: refuerza tu marca + especialidad
-  -->
-  <meta name="description" content="Antenor Michael López Huiza es economista peruano, especialista en econometría y análisis de datos con R, Python, Excel y Power BI. Docente, investigador y asesor académico.">
-  <meta name="keywords" content="Antenor Michael López Huiza, economista peruano, econometría, análisis de datos, RStudio, Python, Excel, Power BI, docente universitario, asesor académico">
+<!-- =========================
+     SEO GLOBAL
+     ========================= -->
+<meta name="description" content="Antenor Michael López Huiza, economista peruano. Plataforma académica con cursos de econometría, análisis de datos, Excel, Python, RStudio y Procesos Electorales 2026.">
+<meta name="keywords" content="Antenor Michael López Huiza, economista peruano, cursos econometría, análisis de datos, procesos electorales 2026, Excel economistas, Python economía">
+<meta name="author" content="Antenor Michael López Huiza">
+<meta name="robots" content="index, follow">
 
-  <meta name="author" content="Antenor Michael López Huiza">
-  <meta name="robots" content="index, follow">
+<!-- =========================
+     OPEN GRAPH
+     ========================= -->
+<meta property="og:title" content="Antenor Michael López Huiza | Plataforma Académica">
+<meta property="og:description" content="Cursos, investigación y asesoría académica especializada.">
+<meta property="og:image" content="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog">
+<meta property="og:type" content="website">
 
-  <!-- =====================================================
-       OPEN GRAPH (FACEBOOK / WHATSAPP / LINKEDIN)
-       ===================================================== -->
-  <meta property="og:title" content="Antenor Michael López Huiza | Economista y Analista de Datos">
-  <meta property="og:description" content="Especialista en econometría, análisis de datos y docencia universitaria. Cursos y asesorías.">
-  <meta property="og:image" content="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog">
-  <meta property="og:type" content="website">
+<!-- =========================
+     SCHEMA PERSON
+     ========================= -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Person",
+ "name": "Antenor Michael López Huiza",
+ "jobTitle": "Economista y Analista de Datos",
+ "url": "https://antenorlopezhuiza.github.io",
+ "sameAs": [
+   "https://www.youtube.com/@antenorlopezhuiza-analisis8651"
+ ]
+}
+</script>
 
-  <!-- =====================================================
-       TWITTER CARD
-       ===================================================== -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Antenor Michael López Huiza">
-  <meta name="twitter:description" content="Economista | Análisis de datos | Cursos y asesorías">
-  <meta name="twitter:image" content="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog">
+<style>
+:root{
+ --primary:#0b2540;
+ --dark:#071a2d;
+ --accent:#38bdf8;
+ --light:#f1f5f9;
+}
 
-  <!-- =====================================================
-       SCHEMA.ORG (ESTRUCTURADOS – CLAVE PARA GOOGLE)
-       ===================================================== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Antenor Michael López Huiza",
-    "jobTitle": "Economista y Analista de Datos",
-    "url": "https://antenorlopezhuiza.github.io",
-    "sameAs": [
-      "https://www.youtube.com/@antenorlopezhuiza-analisis8651",
-      "https://www.facebook.com/AntenorLopezHuiza.asesoriaAcademicayEmpresarial/"
-    ]
-  }
-  </script>
+*{box-sizing:border-box;margin:0;padding:0}
 
-  <!-- =====================================================
-       ESTILOS (UX + SEO INDIRECTO)
-       ===================================================== -->
-  <style>
-    :root {
-      --primary: #0b2540;
-      --dark: #071a2d;
-      --accent: #38bdf8;
-      --light: #f1f5f9;
-    }
+body{
+ font-family:'Segoe UI',sans-serif;
+ background:var(--primary);
+ color:var(--light);
+ line-height:1.7;
+}
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+/* =========================
+   HEADER GRAN PERSONAJE
+   ========================= */
+header{
+ display:flex;
+ flex-wrap:wrap;
+ gap:40px;
+ justify-content:center;
+ align-items:center;
+ padding:70px 20px;
+ background:linear-gradient(135deg,var(--primary),var(--dark));
+}
 
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background: var(--primary);
-      color: var(--light);
-      line-height: 1.6;
-    }
+header img{
+ width:260px;
+ height:260px;
+ border-radius:18px;
+ border:4px solid var(--accent);
+ object-fit:cover;
+ transition:.4s;
+}
 
-    header {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: center;
-      align-items: center;
-      padding: 60px 20px;
-      background: linear-gradient(135deg, var(--primary), var(--dark));
-    }
+header img:hover{
+ transform:scale(1.06);
+ box-shadow:0 0 35px rgba(56,189,248,.9);
+}
 
-    .foto {
-      width: 240px;
-      height: 240px;
-      border-radius: 16px;
-      border: 4px solid var(--accent);
-      object-fit: cover;
-      transition: transform 0.4s, box-shadow 0.4s;
-      cursor: pointer;
-    }
+header h1{color:var(--accent);font-size:2.6rem}
+header p{text-align:center}
 
-    .foto:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(56,189,248,0.9);
-    }
+/* =========================
+   ESTRUCTURA GENERAL
+   ========================= */
+main{max-width:1300px;margin:auto}
+section{padding:70px 20px}
+h2{text-align:center;color:var(--accent);margin-bottom:45px}
 
-    header h1 { color: var(--accent); font-size: 2.4rem; }
-    header p { text-align: center; }
+/* =========================
+   GRID CURSOS
+   ========================= */
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+ gap:35px;
+}
 
-    main { max-width: 1200px; margin: auto; }
+/* =========================
+   TARJETA DE CURSO
+   ========================= */
+.curso{
+ background:#102f4e;
+ border-radius:14px;
+ overflow:hidden;
+ transition:.4s;
+ position:relative;
+}
 
-    section { padding: 60px 20px; }
+.curso:hover{
+ transform:translateY(-8px);
+ box-shadow:0 18px 40px rgba(56,189,248,.4);
+}
 
-    h2 {
-      text-align: center;
-      color: var(--accent);
-      margin-bottom: 40px;
-    }
+/* Miniatura */
+.curso img{
+ width:100%;
+ height:180px;
+ object-fit:cover;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
+/* Contenido */
+.curso .contenido{
+ padding:20px;
+}
 
-    article {
-      background: #102f4e;
-      padding: 20px;
-      border-radius: 12px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
+.curso h3{color:var(--accent);margin-bottom:10px}
 
-    article:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 14px 30px rgba(56,189,248,0.35);
-    }
+/* =========================
+   DESPLEGABLE (HOVER)
+   ========================= */
+.curso .detalle{
+ max-height:0;
+ overflow:hidden;
+ transition:max-height .6s ease;
+}
 
-    article img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 15px;
-    }
+.curso:hover .detalle{
+ max-height:600px;
+}
 
-    article h3 { color: var(--accent); margin-bottom: 10px; }
+/* Botones */
+.btn{
+ display:inline-block;
+ margin-top:10px;
+ padding:10px 14px;
+ background:var(--accent);
+ color:#000;
+ border-radius:6px;
+ font-weight:bold;
+}
 
-    a { color: #facc15; text-decoration: none; font-weight: bold; }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background: var(--accent);
-      color: #000;
-      border-radius: 6px;
-    }
-
-    footer {
-      background: var(--dark);
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-    }
-  </style>
+/* Footer */
+footer{
+ background:var(--dark);
+ text-align:center;
+ padding:35px;
+ font-size:.95rem;
+}
+</style>
 </head>
 
 <body>
 
-<!-- =====================================================
-     HEADER PRINCIPAL (H1 ÚNICO – SEO)
-     ===================================================== -->
 <header>
-  <a href="https://www.youtube.com/@antenorlopezhuiza-analisis8651" target="_blank">
-    <img class="foto"
-         src="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog"
-         alt="Antenor Michael López Huiza">
-  </a>
-
-  <div>
-    <h1>Antenor Michael López Huiza</h1>
-    <p>Economista | Analista de Datos | Docente | Investigador</p>
-    <p>Econometría • R • Python • Excel • Power BI</p>
-  </div>
+<img src="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog"
+     alt="Antenor Michael López Huiza">
+<div>
+<h1>Antenor Michael López Huiza</h1>
+<p>Economista | Analista de Datos | Docente | Investigador</p>
+<p>Plataforma académica de alto nivel</p>
+</div>
 </header>
 
 <main>
 
-<!-- =====================================================
-     SECCIÓN CURSOS (PLATAFORMA BASE)
-     =====================================================
-     RECOMENDACIÓN:
-     - Cada <article> es un curso o video
-     - Duplica para crecer
--->
+<!-- =========================
+     CURSOS ACADÉMICOS
+     ========================= -->
 <section>
-  <h2>🎓 Cursos y Formación</h2>
+<h2>🎓 Cursos Académicos y Profesionales</h2>
 
-  <div class="grid">
+<div class="grid">
 
-    <article>
-      <a href="https://www.youtube.com/watch?v=v0C3XGEg1fc" target="_blank">
-        <img src="https://img.youtube.com/vi/v0C3XGEg1fc/hqdefault.jpg">
-      </a>
-      <h3>Econometría con RStudio</h3>
-      <p>
-        ANOVA, ANCOVA y análisis aplicado con datos reales.
-        Interpretación estadística y enfoque académico.
-      </p>
-      <a class="btn"
-         href="https://wa.me/51973932328?text=Hola%20quiero%20información%20del%20curso%20de%20Econometría">
-        Consultar por WhatsApp
-      </a>
-    </article>
+<!-- =========================
+     CURSO 1
+     ========================= -->
+<div class="curso">
+<img src="https://img.youtube.com/vi/v0C3XGEg1fc/hqdefault.jpg">
+<div class="contenido">
+<h3>Econometría con RStudio</h3>
+<p>Aplicación econométrica con datos reales.</p>
 
-    <article>
-      <a href="https://www.youtube.com/watch?v=ehCO_3rgd0k" target="_blank">
-        <img src="https://img.youtube.com/vi/ehCO_3rgd0k/hqdefault.jpg">
-      </a>
-      <h3>Matemáticas para Economistas</h3>
-      <p>
-        Integrales y aplicaciones económicas explicadas paso a paso.
-      </p>
-    </article>
+<div class="detalle">
+<ul>
+<li>Introducción a R y RStudio</li>
+<li>ANOVA y ANCOVA</li>
+<li>Supuestos estadísticos</li>
+<li>Interpretación económica</li>
+<li>Casos reales (INEI)</li>
+</ul>
 
-  </div>
+<a class="btn"
+href="https://wa.me/51973932328?text=Quiero%20información%20del%20curso%20de%20Econometría">
+Consultar por WhatsApp</a>
+</div>
+</div>
+</div>
+
+<!-- =========================
+     CURSO 2
+     ========================= -->
+<div class="curso">
+<img src="https://img.youtube.com/vi/ehCO_3rgd0k/hqdefault.jpg">
+<div class="contenido">
+<h3>Matemáticas para Economistas</h3>
+<p>Base matemática aplicada a economía.</p>
+
+<div class="detalle">
+<ul>
+<li>Funciones económicas</li>
+<li>Derivadas e interpretación</li>
+<li>Integrales aplicadas</li>
+<li>Optimización económica</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- =========================
+     CURSO 3
+     ========================= -->
+<div class="curso">
+<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg">
+<div class="contenido">
+<h3>Python para Economistas</h3>
+<p>Análisis de datos y modelos.</p>
+
+<div class="detalle">
+<ul>
+<li>Python básico</li>
+<li>Pandas y Numpy</li>
+<li>Visualización</li>
+<li>Regresión y ML</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- =========================
+     CURSO 4
+     ========================= -->
+<div class="curso">
+<img src="https://img.youtube.com/vi/M60r5B_MySE/hqdefault.jpg">
+<div class="contenido">
+<h3>Excel para Economistas y Negocios</h3>
+<p>Excel profesional aplicado.</p>
+
+<div class="detalle">
+<ul>
+<li>Tablas dinámicas</li>
+<li>Funciones financieras</li>
+<li>Proyecciones</li>
+<li>Indicadores</li>
+</ul>
+</div>
+</div>
+</div>
+
+<!-- =========================
+     CURSO ESPECIAL
+     ========================= -->
+<div class="curso">
+<img src="https://img.youtube.com/vi/x9cTS0skwKo/hqdefault.jpg">
+<div class="contenido">
+<h3>Procesos Electorales 2026</h3>
+<p>Curso especializado en gestión electoral.</p>
+
+<div class="detalle">
+<ul>
+<li>Marco legal electoral peruano</li>
+<li>Padrón electoral y logística</li>
+<li>Voto digital y seguridad</li>
+<li>Conteo y validación</li>
+<li>Rol del INEI y JNE</li>
+<li>Análisis estadístico electoral</li>
+</ul>
+
+<a class="btn"
+href="mailto:asesoriaacademica.economia@gmail.com?subject=Curso%20Procesos%20Electorales">
+Solicitar información</a>
+</div>
+</div>
+</div>
+
+</div>
 </section>
 
-<!-- =====================================================
-     SECCIÓN INVESTIGACIÓN / ESCRITOS
-     ===================================================== -->
+<!-- =========================
+     GUÍA PARA AGREGAR / ELIMINAR CURSOS
+     ========================= -->
 <section>
-  <h2>📄 Investigación y Escritos</h2>
-
-  <div class="grid">
-
-    <article>
-      <h3>Microeconomía Aplicada</h3>
-      <p>
-        Estudios de mercado, precios y comportamiento del consumidor
-        con enfoque econométrico.
-      </p>
-    </article>
-
-    <article>
-      <h3>Ensayos de Economía y Sociedad</h3>
-      <p>
-        Reflexiones académicas y humanas desde la economía aplicada.
-      </p>
-    </article>
-
-  </div>
+<h2>📌 Guía de Gestión de Cursos</h2>
+<ul>
+<li>Para agregar un curso: duplica un bloque <code>&lt;div class="curso"&gt;</code></li>
+<li>Cambia imagen, título, descripción y lista</li>
+<li>Para eliminar: borra el bloque completo</li>
+<li>Para agregar videos: usa miniaturas de YouTube</li>
+<li>Para documentos: agrega enlaces Drive o PDF</li>
+</ul>
 </section>
 
-<!-- =====================================================
-     CONTACTO DIRECTO (CONVERSIÓN)
-     ===================================================== -->
+<!-- =========================
+     CONTACTO
+     ========================= -->
 <section>
-  <h2>📞 Contacto y Asesorías</h2>
+<h2>📞 Contacto Directo</h2>
+<p style="text-align:center">
+📱 WhatsApp:
+<a href="https://wa.me/51973932328?text=Hola%20quisiera%20una%20consulta%20académica">
+973 932 328</a><br><br>
 
-  <p style="text-align:center">
-    📱 WhatsApp:
-    <a href="https://wa.me/51973932328?text=Hola%20quisiera%20una%20asesoría" target="_blank">
-      973 932 328
-    </a>
-    <br><br>
-    📧 Correo:
-    <a href="mailto:asesoriaacademica.economia@gmail.com?subject=Consulta%20Académica&body=Hola%20Antenor,%20quisiera%20información">
-      asesoriaacademica.economia@gmail.com
-    </a>
-  </p>
+📧 Correo:
+<a href="mailto:asesoriaacademica.economia@gmail.com?subject=Consulta%20Académica">
+asesoriaacademica.economia@gmail.com</a>
+</p>
 </section>
 
 </main>
 
 <footer>
-  © 2026 Antenor Michael López Huiza | Economía • Datos • Investigación
+© 2026 Antenor Michael López Huiza | Plataforma Académica Profesional
 </footer>
 
 </body>
