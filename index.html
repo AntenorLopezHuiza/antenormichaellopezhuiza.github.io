@@ -1,343 +1,270 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- ================= SEO GENERAL ================= -->
+    <meta charset="UTF-8">
+    <title>Antenor Michael López Huiza | Economista | Plataforma de Cursos y Análisis de Datos</title>
+    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico y asesorías personalizadas.">
+    <meta name="keywords" content="Economía, Excel para economistas, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, cursos online Perú, análisis estadístico, INEI">
+    <meta name="author" content="Antenor Michael López Huiza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ================= OPEN GRAPH ================= -->
+    <meta property="og:title" content="Antenor Michael López Huiza | Cursos y Análisis de Datos">
+    <meta property="og:description" content="Cursos profesionales, blog académico y asesorías en economía y análisis de datos.">
+    <meta property="og:type" content="website">
 
-<title>
-Antenor Michael López Huiza | Economista | Cursos, Investigación y Procesos Electorales
-</title>
+    <!-- ================= ESTILOS ================= -->
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
 
-<!-- =========================
-     SEO GLOBAL
-     ========================= -->
-<meta name="description" content="Antenor Michael López Huiza, economista peruano. Plataforma académica con cursos de econometría, análisis de datos, Excel, Python, RStudio y Procesos Electorales 2026.">
-<meta name="keywords" content="Antenor Michael López Huiza, economista peruano, cursos econometría, análisis de datos, procesos electorales 2026, Excel economistas, Python economía">
-<meta name="author" content="Antenor Michael López Huiza">
-<meta name="robots" content="index, follow">
+        header {
+            background: linear-gradient(135deg, #0a1f44, #123b7a);
+            color: white;
+            padding: 40px 20px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
 
-<!-- =========================
-     OPEN GRAPH
-     ========================= -->
-<meta property="og:title" content="Antenor Michael López Huiza | Plataforma Académica">
-<meta property="og:description" content="Cursos, investigación y asesoría académica especializada.">
-<meta property="og:image" content="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog">
-<meta property="og:type" content="website">
+        header img {
+            width: 160px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
 
-<!-- =========================
-     SCHEMA PERSON
-     ========================= -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Antenor Michael López Huiza",
- "jobTitle": "Economista y Analista de Datos",
- "url": "https://antenorlopezhuiza.github.io",
- "sameAs": [
-   "https://www.youtube.com/@antenorlopezhuiza-analisis8651"
- ]
-}
-</script>
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
 
-<style>
-:root{
- --primary:#0b2540;
- --dark:#071a2d;
- --accent:#38bdf8;
- --light:#f1f5f9;
-}
+        header p {
+            max-width: 700px;
+            line-height: 1.6;
+        }
 
-*{box-sizing:border-box;margin:0;padding:0}
+        nav {
+            background: #111;
+            padding: 12px;
+            text-align: center;
+        }
 
-body{
- font-family:'Segoe UI',sans-serif;
- background:var(--primary);
- color:var(--light);
- line-height:1.7;
-}
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-/* =========================
-   HEADER GRAN PERSONAJE
-   ========================= */
-header{
- display:flex;
- flex-wrap:wrap;
- gap:40px;
- justify-content:center;
- align-items:center;
- padding:70px 20px;
- background:linear-gradient(135deg,var(--primary),var(--dark));
-}
+        nav a:hover {
+            color: #ffd700;
+        }
 
-header img{
- width:260px;
- height:260px;
- border-radius:18px;
- border:4px solid var(--accent);
- object-fit:cover;
- transition:.4s;
-}
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
 
-header img:hover{
- transform:scale(1.06);
- box-shadow:0 0 35px rgba(56,189,248,.9);
-}
+        h2 {
+            color: #0a1f44;
+            border-bottom: 3px solid #0a1f44;
+            padding-bottom: 5px;
+        }
 
-header h1{color:var(--accent);font-size:2.6rem}
-header p{text-align:center}
+        /* ================= CURSOS ================= */
+        .cursos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
 
-/* =========================
-   ESTRUCTURA GENERAL
-   ========================= */
-main{max-width:1300px;margin:auto}
-section{padding:70px 20px}
-h2{text-align:center;color:var(--accent);margin-bottom:45px}
+        .curso {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
 
-/* =========================
-   GRID CURSOS
-   ========================= */
-.grid{
- display:grid;
- grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
- gap:35px;
-}
+        .curso:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
-/* =========================
-   TARJETA DE CURSO
-   ========================= */
-.curso{
- background:#102f4e;
- border-radius:14px;
- overflow:hidden;
- transition:.4s;
- position:relative;
-}
+        .curso h3 {
+            margin-top: 0;
+            color: #123b7a;
+        }
 
-.curso:hover{
- transform:translateY(-8px);
- box-shadow:0 18px 40px rgba(56,189,248,.4);
-}
+        .detalle {
+            display: none;
+            margin-top: 10px;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
 
-/* Miniatura */
-.curso img{
- width:100%;
- height:180px;
- object-fit:cover;
-}
+        /* ================= BLOG ================= */
+        .blog-post {
+            background: white;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 6px solid #123b7a;
+        }
 
-/* Contenido */
-.curso .contenido{
- padding:20px;
-}
+        /* ================= CONTACTO ================= */
+        .contacto {
+            background: #0a1f44;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-.curso h3{color:var(--accent);margin-bottom:10px}
+        .contacto a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background: #ffd700;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+        }
 
-/* =========================
-   DESPLEGABLE (HOVER)
-   ========================= */
-.curso .detalle{
- max-height:0;
- overflow:hidden;
- transition:max-height .6s ease;
-}
+        .contacto a:hover {
+            background: white;
+        }
 
-.curso:hover .detalle{
- max-height:600px;
-}
+        footer {
+            background: #111;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
 
-/* Botones */
-.btn{
- display:inline-block;
- margin-top:10px;
- padding:10px 14px;
- background:var(--accent);
- color:#000;
- border-radius:6px;
- font-weight:bold;
-}
-
-/* Footer */
-footer{
- background:var(--dark);
- text-align:center;
- padding:35px;
- font-size:.95rem;
-}
-</style>
+    <!-- ================= JS ================= -->
+    <script>
+        function toggleDetalle(id) {
+            const el = document.getElementById(id);
+            el.style.display = el.style.display === "block" ? "none" : "block";
+        }
+    </script>
 </head>
 
 <body>
 
 <header>
-<img src="https://drive.google.com/uc?export=view&id=1od907dfwZ58ppZuLbp8F4aWvtYeOLJog"
-     alt="Antenor Michael López Huiza">
-<div>
-<h1>Antenor Michael López Huiza</h1>
-<p>Economista | Analista de Datos | Docente | Investigador</p>
-<p>Plataforma académica de alto nivel</p>
-</div>
+    <img src="img/antenor.jpg" alt="Antenor Michael López Huiza">
+    <div>
+        <h1>Antenor Michael López Huiza</h1>
+        <p>
+            Economista, analista de datos e investigador. Especialista en Excel, Python, RStudio,
+            Power BI, aprendizaje automático y análisis de procesos electorales.
+            Plataforma orientada a la formación profesional, investigación aplicada y asesoría técnica.
+        </p>
+    </div>
 </header>
 
-<main>
+<nav>
+    <a href="#cursos">Cursos</a>
+    <a href="#blog">Blog</a>
+    <a href="#contacto">Contacto</a>
+</nav>
 
-<!-- =========================
-     CURSOS ACADÉMICOS
-     ========================= -->
-<section>
-<h2>🎓 Cursos Académicos y Profesionales</h2>
+<section id="cursos">
+    <h2>Cursos que Dicto</h2>
 
-<div class="grid">
+    <div class="cursos-grid">
 
-<!-- =========================
-     CURSO 1
-     ========================= -->
-<div class="curso">
-<img src="https://img.youtube.com/vi/v0C3XGEg1fc/hqdefault.jpg">
-<div class="contenido">
-<h3>Econometría con RStudio</h3>
-<p>Aplicación econométrica con datos reales.</p>
+        <div class="curso" onclick="toggleDetalle('excel')">
+            <h3>Excel para Economistas y Negocios</h3>
+            <p>Desde nivel básico hasta análisis avanzado.</p>
+            <div class="detalle" id="excel">
+                <strong>Básico:</strong> fórmulas, funciones, tablas<br>
+                <strong>Intermedio:</strong> tablas dinámicas, validación, dashboards<br>
+                <strong>Avanzado:</strong> macros, VBA, modelos financieros<br>
+                📹 Videos | 📄 Material descargable
+            </div>
+        </div>
 
-<div class="detalle">
-<ul>
-<li>Introducción a R y RStudio</li>
-<li>ANOVA y ANCOVA</li>
-<li>Supuestos estadísticos</li>
-<li>Interpretación económica</li>
-<li>Casos reales (INEI)</li>
-</ul>
+        <div class="curso" onclick="toggleDetalle('python')">
+            <h3>Análisis de Datos con Python</h3>
+            <p>Estadística, ML y visualización.</p>
+            <div class="detalle" id="python">
+                Python básico, pandas, numpy<br>
+                Visualización (matplotlib)<br>
+                Regresión, clasificación, validación<br>
+                Casos reales INEI
+            </div>
+        </div>
 
-<a class="btn"
-href="https://wa.me/51973932328?text=Quiero%20información%20del%20curso%20de%20Econometría">
-Consultar por WhatsApp</a>
-</div>
-</div>
-</div>
+        <div class="curso" onclick="toggleDetalle('r')">
+            <h3>Análisis de Datos con RStudio</h3>
+            <p>Estadística aplicada y econometría.</p>
+            <div class="detalle" id="r">
+                Manipulación de datos<br>
+                Modelos estadísticos<br>
+                Informes reproducibles
+            </div>
+        </div>
 
-<!-- =========================
-     CURSO 2
-     ========================= -->
-<div class="curso">
-<img src="https://img.youtube.com/vi/ehCO_3rgd0k/hqdefault.jpg">
-<div class="contenido">
-<h3>Matemáticas para Economistas</h3>
-<p>Base matemática aplicada a economía.</p>
+        <div class="curso" onclick="toggleDetalle('powerbi')">
+            <h3>Power BI</h3>
+            <p>Visualización profesional.</p>
+            <div class="detalle" id="powerbi">
+                Modelado de datos<br>
+                DAX<br>
+                Dashboards ejecutivos
+            </div>
+        </div>
 
-<div class="detalle">
-<ul>
-<li>Funciones económicas</li>
-<li>Derivadas e interpretación</li>
-<li>Integrales aplicadas</li>
-<li>Optimización económica</li>
-</ul>
-</div>
-</div>
-</div>
+        <div class="curso" onclick="toggleDetalle('electoral')">
+            <h3>Procesos Electorales 2026</h3>
+            <p>Análisis técnico y normativo.</p>
+            <div class="detalle" id="electoral">
+                Marco legal electoral<br>
+                Padrón, voto digital<br>
+                Análisis de resultados<br>
+                Auditoría y transparencia
+            </div>
+        </div>
 
-<!-- =========================
-     CURSO 3
-     ========================= -->
-<div class="curso">
-<img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg">
-<div class="contenido">
-<h3>Python para Economistas</h3>
-<p>Análisis de datos y modelos.</p>
-
-<div class="detalle">
-<ul>
-<li>Python básico</li>
-<li>Pandas y Numpy</li>
-<li>Visualización</li>
-<li>Regresión y ML</li>
-</ul>
-</div>
-</div>
-</div>
-
-<!-- =========================
-     CURSO 4
-     ========================= -->
-<div class="curso">
-<img src="https://img.youtube.com/vi/M60r5B_MySE/hqdefault.jpg">
-<div class="contenido">
-<h3>Excel para Economistas y Negocios</h3>
-<p>Excel profesional aplicado.</p>
-
-<div class="detalle">
-<ul>
-<li>Tablas dinámicas</li>
-<li>Funciones financieras</li>
-<li>Proyecciones</li>
-<li>Indicadores</li>
-</ul>
-</div>
-</div>
-</div>
-
-<!-- =========================
-     CURSO ESPECIAL
-     ========================= -->
-<div class="curso">
-<img src="https://img.youtube.com/vi/x9cTS0skwKo/hqdefault.jpg">
-<div class="contenido">
-<h3>Procesos Electorales 2026</h3>
-<p>Curso especializado en gestión electoral.</p>
-
-<div class="detalle">
-<ul>
-<li>Marco legal electoral peruano</li>
-<li>Padrón electoral y logística</li>
-<li>Voto digital y seguridad</li>
-<li>Conteo y validación</li>
-<li>Rol del INEI y JNE</li>
-<li>Análisis estadístico electoral</li>
-</ul>
-
-<a class="btn"
-href="mailto:asesoriaacademica.economia@gmail.com?subject=Curso%20Procesos%20Electorales">
-Solicitar información</a>
-</div>
-</div>
-</div>
-
-</div>
+    </div>
 </section>
 
-<!-- =========================
-     GUÍA PARA AGREGAR / ELIMINAR CURSOS
-     ========================= -->
-<section>
-<h2>📌 Guía de Gestión de Cursos</h2>
-<ul>
-<li>Para agregar un curso: duplica un bloque <code>&lt;div class="curso"&gt;</code></li>
-<li>Cambia imagen, título, descripción y lista</li>
-<li>Para eliminar: borra el bloque completo</li>
-<li>Para agregar videos: usa miniaturas de YouTube</li>
-<li>Para documentos: agrega enlaces Drive o PDF</li>
-</ul>
+<section id="blog">
+    <h2>Blog Académico</h2>
+
+    <div class="blog-post">
+        <h3>Aprendizaje Supervisado en Economía</h3>
+        <p>Aplicaciones reales con datos del INEI y encuestas nacionales.</p>
+    </div>
+
+    <div class="blog-post">
+        <h3>Análisis de Políticas Públicas con Datos</h3>
+        <p>Evaluación de impacto y evidencia empírica.</p>
+    </div>
 </section>
 
-<!-- =========================
-     CONTACTO
-     ========================= -->
-<section>
-<h2>📞 Contacto Directo</h2>
-<p style="text-align:center">
-📱 WhatsApp:
-<a href="https://wa.me/51973932328?text=Hola%20quisiera%20una%20consulta%20académica">
-973 932 328</a><br><br>
-
-📧 Correo:
-<a href="mailto:asesoriaacademica.economia@gmail.com?subject=Consulta%20Académica">
-asesoriaacademica.economia@gmail.com</a>
-</p>
-</section>
-
-</main>
+<!-- BOTÓN FUERA DE RECUADROS -->
+<div class="contacto" id="contacto">
+    <h2>Solicitar Información</h2>
+    <a href="https://wa.me/51973932328" target="_blank">WhatsApp Directo</a>
+    <a href="mailto:asesoriaacademica.economia@gmail.com">Enviar Correo</a>
+</div>
 
 <footer>
-© 2026 Antenor Michael López Huiza | Plataforma Académica Profesional
+    © 2026 Antenor Michael López Huiza | Plataforma Académica Profesional
 </footer>
 
 </body>
