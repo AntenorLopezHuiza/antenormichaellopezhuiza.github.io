@@ -3,9 +3,9 @@
 <head>
     <!-- ================= SEO GENERAL ================= -->
     <meta charset="UTF-8">
-    <title>Antenor Michael López Huiza | Economista | Plataforma de Cursos y Análisis de Datos</title>
-    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico y asesorías personalizadas.">
-    <meta name="keywords" content="Economía, Excel para economistas, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, cursos online Perú, análisis estadístico, INEI">
+    <title>Antenor Michael López Huiza | Economista | Plataforma Académica</title>
+    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico y asesorías.">
+    <meta name="keywords" content="Economista peruano, cursos de Excel, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, análisis estadístico, INEI">
     <meta name="author" content="Antenor Michael López Huiza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -18,56 +18,71 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Segoe UI", Arial, sans-serif;
             background: #f4f6f8;
-            color: #222;
+            color: #1f2933;
         }
 
+        /* ================= HEADER ================= */
         header {
             background: linear-gradient(135deg, #0a1f44, #123b7a);
             color: white;
-            padding: 40px 20px;
+            padding: 50px 30px;
             display: flex;
             align-items: center;
-            gap: 30px;
+            justify-content: space-between;
             flex-wrap: wrap;
+            gap: 30px;
         }
 
-        header img {
-            width: 160px;
-            border-radius: 50%;
-            border: 4px solid white;
+        .header-texto {
+            max-width: 700px;
         }
 
         header h1 {
-            margin: 0;
-            font-size: 2.2em;
+            margin: 0 0 15px 0;
+            font-size: 2.4em;
+            letter-spacing: 0.5px;
         }
 
         header p {
-            max-width: 700px;
-            line-height: 1.6;
+            line-height: 1.7;
+            font-size: 1.05em;
         }
 
+        /* ================= IMAGEN PERFIL ================= */
+        .perfil-img {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 16px; /* CUADRADO ELEGANTE */
+            border: 5px solid #ffffff;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+            background: #fff;
+        }
+
+        /* ================= NAV ================= */
         nav {
-            background: #111;
-            padding: 12px;
+            background: #111827;
+            padding: 14px;
             text-align: center;
         }
 
         nav a {
-            color: white;
-            margin: 0 15px;
+            color: #f9fafb;
+            margin: 0 18px;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
 
         nav a:hover {
-            color: #ffd700;
+            color: #facc15;
         }
 
+        /* ================= SECCIONES ================= */
         section {
-            padding: 40px 20px;
+            padding: 50px 25px;
             max-width: 1200px;
             margin: auto;
         }
@@ -75,29 +90,29 @@
         h2 {
             color: #0a1f44;
             border-bottom: 3px solid #0a1f44;
-            padding-bottom: 5px;
+            padding-bottom: 6px;
+            margin-bottom: 25px;
         }
 
         /* ================= CURSOS ================= */
         .cursos-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
+            gap: 22px;
         }
 
         .curso {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 22px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             cursor: pointer;
         }
 
         .curso:hover {
             transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 18px 30px rgba(0,0,0,0.25);
         }
 
         .curso h3 {
@@ -107,48 +122,64 @@
 
         .detalle {
             display: none;
-            margin-top: 10px;
+            margin-top: 12px;
             font-size: 0.95em;
             line-height: 1.6;
+            color: #374151;
         }
 
         /* ================= BLOG ================= */
         .blog-post {
             background: white;
-            padding: 20px;
-            margin-bottom: 15px;
+            padding: 22px;
+            margin-bottom: 18px;
             border-left: 6px solid #123b7a;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
         }
 
         /* ================= CONTACTO ================= */
         .contacto {
-            background: #0a1f44;
+            background: linear-gradient(135deg, #0a1f44, #020617);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
         }
 
         .contacto a {
             display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            background: #ffd700;
-            color: black;
+            margin: 12px;
+            padding: 14px 26px;
+            background: #facc15;
+            color: #111827;
             font-weight: bold;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
+            transition: background 0.3s ease;
         }
 
         .contacto a:hover {
-            background: white;
+            background: #ffffff;
         }
 
         footer {
-            background: #111;
-            color: #ccc;
+            background: #020617;
+            color: #9ca3af;
             text-align: center;
-            padding: 15px;
+            padding: 18px;
             font-size: 0.9em;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .perfil-img {
+                width: 200px;
+                height: 200px;
+            }
         }
     </style>
 
@@ -164,8 +195,7 @@
 <body>
 
 <header>
-    <img src="img/antenor.jpg" alt="Antenor Michael López Huiza">
-    <div>
+    <div class="header-texto">
         <h1>Antenor Michael López Huiza</h1>
         <p>
             Economista, analista de datos e investigador. Especialista en Excel, Python, RStudio,
@@ -173,6 +203,9 @@
             Plataforma orientada a la formación profesional, investigación aplicada y asesoría técnica.
         </p>
     </div>
+
+    <!-- IMAGEN LOCAL -->
+    <img src="img/antenor.jpg" alt="Antenor Michael López Huiza" class="perfil-img">
 </header>
 
 <nav>
@@ -191,7 +224,7 @@
             <p>Desde nivel básico hasta análisis avanzado.</p>
             <div class="detalle" id="excel">
                 <strong>Básico:</strong> fórmulas, funciones, tablas<br>
-                <strong>Intermedio:</strong> tablas dinámicas, validación, dashboards<br>
+                <strong>Intermedio:</strong> tablas dinámicas, dashboards<br>
                 <strong>Avanzado:</strong> macros, VBA, modelos financieros<br>
                 📹 Videos | 📄 Material descargable
             </div>
@@ -201,9 +234,8 @@
             <h3>Análisis de Datos con Python</h3>
             <p>Estadística, ML y visualización.</p>
             <div class="detalle" id="python">
-                Python básico, pandas, numpy<br>
-                Visualización (matplotlib)<br>
-                Regresión, clasificación, validación<br>
+                pandas, numpy, matplotlib<br>
+                Regresión y clasificación<br>
                 Casos reales INEI
             </div>
         </div>
@@ -212,19 +244,9 @@
             <h3>Análisis de Datos con RStudio</h3>
             <p>Estadística aplicada y econometría.</p>
             <div class="detalle" id="r">
-                Manipulación de datos<br>
-                Modelos estadísticos<br>
+                Limpieza de datos<br>
+                Modelos econométricos<br>
                 Informes reproducibles
-            </div>
-        </div>
-
-        <div class="curso" onclick="toggleDetalle('powerbi')">
-            <h3>Power BI</h3>
-            <p>Visualización profesional.</p>
-            <div class="detalle" id="powerbi">
-                Modelado de datos<br>
-                DAX<br>
-                Dashboards ejecutivos
             </div>
         </div>
 
@@ -233,8 +255,7 @@
             <p>Análisis técnico y normativo.</p>
             <div class="detalle" id="electoral">
                 Marco legal electoral<br>
-                Padrón, voto digital<br>
-                Análisis de resultados<br>
+                Voto digital y padrón<br>
                 Auditoría y transparencia
             </div>
         </div>
@@ -256,7 +277,6 @@
     </div>
 </section>
 
-<!-- BOTÓN FUERA DE RECUADROS -->
 <div class="contacto" id="contacto">
     <h2>Solicitar Información</h2>
     <a href="https://wa.me/51973932328" target="_blank">WhatsApp Directo</a>
