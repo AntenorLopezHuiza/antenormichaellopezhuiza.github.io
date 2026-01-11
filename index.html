@@ -4,15 +4,10 @@
     <!-- ================= SEO GENERAL ================= -->
     <meta charset="UTF-8">
     <title>Antenor Michael López Huiza | Economista | Plataforma Académica</title>
-    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico y asesorías.">
-    <meta name="keywords" content="Economista peruano, cursos de Excel, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, análisis estadístico, INEI">
+    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico, coaching motivacional y ajedrez.">
+    <meta name="keywords" content="Economista peruano, cursos Excel, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, coaching motivacional, ajedrez, poemas económicos">
     <meta name="author" content="Antenor Michael López Huiza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- ================= OPEN GRAPH ================= -->
-    <meta property="og:title" content="Antenor Michael López Huiza | Cursos y Análisis de Datos">
-    <meta property="og:description" content="Cursos profesionales, blog académico y asesorías en economía y análisis de datos.">
-    <meta property="og:type" content="website">
 
     <!-- ================= ESTILOS ================= -->
     <style>
@@ -23,68 +18,47 @@
             color: #1f2933;
         }
 
-        /* ================= HEADER ================= */
         header {
             background: linear-gradient(135deg, #0a1f44, #123b7a);
             color: white;
             padding: 50px 30px;
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             flex-wrap: wrap;
             gap: 30px;
         }
 
-        .header-texto {
-            max-width: 700px;
-        }
-
-        header h1 {
-            margin: 0 0 15px 0;
-            font-size: 2.4em;
-            letter-spacing: 0.5px;
-        }
-
-        header p {
-            line-height: 1.7;
-            font-size: 1.05em;
-        }
-
-        /* ================= IMAGEN PERFIL ================= */
         .perfil-img {
             width: 240px;
             height: 240px;
             object-fit: cover;
-            border-radius: 16px; /* CUADRADO ELEGANTE */
-            border: 5px solid #ffffff;
+            border-radius: 16px;
+            border: 5px solid white;
             box-shadow: 0 15px 35px rgba(0,0,0,0.35);
-            background: #fff;
         }
 
-        /* ================= NAV ================= */
         nav {
-            background: #111827;
+            background: #020617;
             padding: 14px;
             text-align: center;
         }
 
         nav a {
-            color: #f9fafb;
-            margin: 0 18px;
+            color: white;
+            margin: 0 16px;
             text-decoration: none;
-            font-weight: 600;
-            letter-spacing: 0.5px;
+            font-weight: bold;
         }
 
         nav a:hover {
             color: #facc15;
         }
 
-        /* ================= SECCIONES ================= */
         section {
-            padding: 50px 25px;
             max-width: 1200px;
             margin: auto;
+            padding: 50px 25px;
         }
 
         h2 {
@@ -94,52 +68,31 @@
             margin-bottom: 25px;
         }
 
-        /* ================= CURSOS ================= */
-        .cursos-grid {
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 22px;
         }
 
-        .curso {
-            background: #ffffff;
-            border-radius: 12px;
-            padding: 22px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-
-        .curso:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 18px 30px rgba(0,0,0,0.25);
-        }
-
-        .curso h3 {
-            margin-top: 0;
-            color: #123b7a;
-        }
-
-        .detalle {
-            display: none;
-            margin-top: 12px;
-            font-size: 0.95em;
-            line-height: 1.6;
-            color: #374151;
-        }
-
-        /* ================= BLOG ================= */
-        .blog-post {
+        .card {
             background: white;
             padding: 22px;
-            margin-bottom: 18px;
-            border-left: 6px solid #123b7a;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
         }
 
-        /* ================= CONTACTO ================= */
+        .card a {
+            color: #1d4ed8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
         .contacto {
-            background: linear-gradient(135deg, #0a1f44, #020617);
+            background: #0a1f44;
             color: white;
             text-align: center;
             padding: 50px 20px;
@@ -147,18 +100,13 @@
 
         .contacto a {
             display: inline-block;
-            margin: 12px;
+            margin: 10px;
             padding: 14px 26px;
             background: #facc15;
-            color: #111827;
+            color: #111;
             font-weight: bold;
             text-decoration: none;
             border-radius: 8px;
-            transition: background 0.3s ease;
-        }
-
-        .contacto a:hover {
-            background: #ffffff;
         }
 
         footer {
@@ -166,126 +114,38 @@
             color: #9ca3af;
             text-align: center;
             padding: 18px;
-            font-size: 0.9em;
-        }
-
-        /* ================= RESPONSIVE ================= */
-        @media (max-width: 768px) {
-            header {
-                flex-direction: column-reverse;
-                text-align: center;
-            }
-
-            .perfil-img {
-                width: 200px;
-                height: 200px;
-            }
         }
     </style>
-
-    <!-- ================= JS ================= -->
-    <script>
-        function toggleDetalle(id) {
-            const el = document.getElementById(id);
-            el.style.display = el.style.display === "block" ? "none" : "block";
-        }
-    </script>
 </head>
 
 <body>
 
 <header>
-    <div class="header-texto">
+    <div>
         <h1>Antenor Michael López Huiza</h1>
         <p>
-            Economista, analista de datos e investigador. Especialista en Excel, Python, RStudio,
-            Power BI, aprendizaje automático y análisis de procesos electorales.
-            Plataforma orientada a la formación profesional, investigación aplicada y asesoría técnica.
+            Economista, analista de datos, docente e investigador.  
+            Coach motivacional y ajedrecista.  
+            Plataforma académica orientada a la formación profesional, análisis aplicado y desarrollo humano.
         </p>
     </div>
-
-    <!-- IMAGEN LOCAL -->
     <img src="img/antenor.jpg" alt="Antenor Michael López Huiza" class="perfil-img">
 </header>
 
 <nav>
     <a href="#cursos">Cursos</a>
-    <a href="#blog">Blog</a>
+    <a href="#temarios">Temarios & Videos</a>
+    <a href="#documentos">Documentos</a>
+    <a href="#motivacion">Motivación & Ajedrez</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
+<!-- ================= CURSOS ================= -->
 <section id="cursos">
     <h2>Cursos que Dicto</h2>
-
-    <div class="cursos-grid">
-
-        <div class="curso" onclick="toggleDetalle('excel')">
-            <h3>Excel para Economistas y Negocios</h3>
-            <p>Desde nivel básico hasta análisis avanzado.</p>
-            <div class="detalle" id="excel">
-                <strong>Básico:</strong> fórmulas, funciones, tablas<br>
-                <strong>Intermedio:</strong> tablas dinámicas, dashboards<br>
-                <strong>Avanzado:</strong> macros, VBA, modelos financieros<br>
-                📹 Videos | 📄 Material descargable
-            </div>
-        </div>
-
-        <div class="curso" onclick="toggleDetalle('python')">
-            <h3>Análisis de Datos con Python</h3>
-            <p>Estadística, ML y visualización.</p>
-            <div class="detalle" id="python">
-                pandas, numpy, matplotlib<br>
-                Regresión y clasificación<br>
-                Casos reales INEI
-            </div>
-        </div>
-
-        <div class="curso" onclick="toggleDetalle('r')">
-            <h3>Análisis de Datos con RStudio</h3>
-            <p>Estadística aplicada y econometría.</p>
-            <div class="detalle" id="r">
-                Limpieza de datos<br>
-                Modelos econométricos<br>
-                Informes reproducibles
-            </div>
-        </div>
-
-        <div class="curso" onclick="toggleDetalle('electoral')">
-            <h3>Procesos Electorales 2026</h3>
-            <p>Análisis técnico y normativo.</p>
-            <div class="detalle" id="electoral">
-                Marco legal electoral<br>
-                Voto digital y padrón<br>
-                Auditoría y transparencia
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<section id="blog">
-    <h2>Blog Académico</h2>
-
-    <div class="blog-post">
-        <h3>Aprendizaje Supervisado en Economía</h3>
-        <p>Aplicaciones reales con datos del INEI y encuestas nacionales.</p>
-    </div>
-
-    <div class="blog-post">
-        <h3>Análisis de Políticas Públicas con Datos</h3>
-        <p>Evaluación de impacto y evidencia empírica.</p>
-    </div>
-</section>
-
-<div class="contacto" id="contacto">
-    <h2>Solicitar Información</h2>
-    <a href="https://wa.me/51973932328" target="_blank">WhatsApp Directo</a>
-    <a href="mailto:asesoriaacademica.economia@gmail.com">Enviar Correo</a>
-</div>
-
-<footer>
-    © 2026 Antenor Michael López Huiza | Plataforma Académica Profesional
-</footer>
-
-</body>
-</html>
+    <div class="grid">
+        <div class="card"><strong>Excel para Economistas</strong></div>
+        <div class="card"><strong>Python para Análisis de Datos</strong></div>
+        <div class="card"><strong>RStudio y Econometría</strong></div>
+        <div class="card"><strong>Power BI</strong></div>
+        <div class
