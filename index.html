@@ -145,148 +145,155 @@
 <section id="cursos">
     <h2>Cursos que Dicto</h2>
 
-    <div class="cursos-grid">
+    <!-- ================= TARJETAS DE CURSOS ================= -->
+    <div class="cursos-grid-horizontal">
 
-        <!-- ================= EXCEL ================= -->
-        <div class="curso" onclick="toggleDetalle('excel')">
+        <div class="curso-card" onclick="toggleDetalle('excel')">
+            <img src="img/excel.jpg" alt="Excel para Economistas">
             <h3>Excel para Economistas y Negocios</h3>
-            <p>Básico – Intermedio – Avanzado</p>
-            <div class="detalle" id="excel">
-
-                <strong>BÁSICO</strong><br>
-                • Introducción a Excel<br>
-                • Fórmulas y funciones básicas<br>
-                • Tablas y formatos<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
-                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>INTERMEDIO</strong><br>
-                • Tablas dinámicas<br>
-                • Funciones financieras (VAN, TIR)<br>
-                • Presupuestos y dashboards<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
-                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>AVANZADO</strong><br>
-                • Excel financiero<br>
-                • Proyecciones económicas<br>
-                • Macros y VBA<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
-                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+            <p>Herramienta clave para análisis financiero y gestión</p>
         </div>
 
-        <!-- ================= PYTHON ================= -->
-        <div class="curso" onclick="toggleDetalle('python')">
+        <div class="curso-card" onclick="toggleDetalle('python')">
+            <img src="img/python.jpg" alt="Python análisis de datos">
             <h3>Análisis de Datos con Python</h3>
-            <p>Estadística, ML y visualización</p>
-            <div class="detalle" id="python">
-
-                <strong>BÁSICO</strong><br>
-                • Introducción a Python<br>
-                • Estadística descriptiva<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>INTERMEDIO</strong><br>
-                • Pandas y Numpy<br>
-                • Limpieza de datos<br>
-                • Visualización<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>AVANZADO</strong><br>
-                • Regresión y clasificación<br>
-                • Machine Learning<br>
-                • Casos INEI<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+            <p>Estadística, machine learning y casos reales</p>
         </div>
 
-        <!-- ================= RSTUDIO ================= -->
-        <div class="curso" onclick="toggleDetalle('r')">
+        <div class="curso-card" onclick="toggleDetalle('r')">
+            <img src="img/rstudio.jpg" alt="RStudio análisis econométrico">
             <h3>Análisis de Datos con RStudio</h3>
-            <p>Estadística y econometría</p>
-            <div class="detalle" id="r">
-
-                <strong>BÁSICO</strong><br>
-                • Introducción a R<br>
-                • Importación de datos<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>INTERMEDIO</strong><br>
-                • Limpieza de datos<br>
-                • Visualización con ggplot2<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
-
-                <strong>AVANZADO</strong><br>
-                • Econometría aplicada<br>
-                • Informes reproducibles<br>
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+            <p>Econometría aplicada y análisis estadístico</p>
         </div>
 
-        <!-- ================= GESTIÓN Y FINANZAS ================= -->
-        <div class="curso" onclick="toggleDetalle('finanzas')">
-            <h3>Gestión, Finanzas y Presupuesto</h3>
-            <p>Excel financiero y planificación</p>
-            <div class="detalle" id="finanzas">
-
-                <strong>BÁSICO</strong><br>
-                • Costos, ingresos y utilidades<br>
-                • Contabilidad básica<br><br>
-
-                <strong>INTERMEDIO</strong><br>
-                • Presupuestos<br>
-                • Flujo de caja<br><br>
-
-                <strong>AVANZADO</strong><br>
-                • Planeamiento financiero<br>
-                • Evaluación de proyectos<br>
-
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br>
-                📄 <a href="#" target="_blank">Documentos (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+        <div class="curso-card" onclick="toggleDetalle('finanzas')">
+            <img src="img/finanzas.jpg" alt="Gestión financiera">
+            <h3>Gestión, Presupuesto y Finanzas</h3>
+            <p>Negocios, planificación y control financiero</p>
         </div>
 
-        <!-- ================= ELECTORAL ================= -->
-        <div class="curso" onclick="toggleDetalle('electoral')">
+        <div class="curso-card" onclick="toggleDetalle('electoral')">
+            <img src="img/electoral.jpg" alt="Procesos electorales">
             <h3>Procesos Electorales 2026</h3>
-            <p>Análisis técnico y normativo</p>
-            <div class="detalle" id="electoral">
-
-                • Sistema electoral peruano<br>
-                • Padrón y voto digital<br>
-                • Auditoría y transparencia<br>
-
-                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br>
-                📄 <a href="#" target="_blank">Documentos (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+            <p>Sistema electoral, datos y transparencia</p>
         </div>
 
-        <!-- ================= MOTIVACIÓN Y AJEDREZ ================= -->
-        <div class="curso" onclick="toggleDetalle('motivacion')">
+        <div class="curso-card" onclick="toggleDetalle('motivacion')">
+            <img src="img/motivacion.jpg" alt="Motivación y ajedrez">
             <h3>Motivación, Coaching y Ajedrez</h3>
-            <p>Desarrollo personal y estrategia</p>
-            <div class="detalle" id="motivacion">
-
-                • Coaching motivacional<br>
-                • Poemas y escritos reflexivos<br>
-                • Ajedrez como estrategia de vida<br>
-
-                ▶ <a href="https://youtube.com/" target="_blank">Videos (CAMBIA ESTE ENLACE)</a><br>
-                ✍ <a href="#" target="_blank">Lecturas (CAMBIA ESTE ENLACE)</a>
-
-            </div>
+            <p>Desarrollo personal y pensamiento estratégico</p>
         </div>
 
     </div>
+
+    <!-- ================= TEMARIOS ================= -->
+
+    <div class="detalle-curso" id="excel">
+        <h3>Excel para Economistas y Negocios</h3>
+
+        <strong>Nivel Básico – Fundamentos:</strong><br>
+        • Entorno de Excel y lógica de hojas<br>
+        • Fórmulas y funciones esenciales<br>
+        • Tablas, formatos y validación de datos<br>
+        👉 <em>Objetivo:</em> dominar Excel como herramienta básica de trabajo profesional.<br><br>
+
+        <strong>Nivel Intermedio – Análisis:</strong><br>
+        • Tablas dinámicas y segmentadores<br>
+        • Presupuestos y control de gastos<br>
+        • Análisis de escenarios y gráficos<br>
+        👉 <em>Objetivo:</em> analizar información y apoyar decisiones económicas.<br><br>
+
+        <strong>Nivel Avanzado – Finanzas:</strong><br>
+        • Excel financiero y proyecciones<br>
+        • Modelos de evaluación de proyectos<br>
+        • Macros y VBA básico<br>
+        👉 <em>Objetivo:</em> automatizar y construir modelos profesionales.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Clases en YouTube (CAMBIA ESTE ENLACE)</a><br>
+        📄 <a href="#" target="_blank">Material descargable (CAMBIA ESTE ENLACE)</a>
+    </div>
+
+    <div class="detalle-curso" id="python">
+        <h3>Análisis de Datos con Python</h3>
+
+        <strong>Nivel Básico – Programación:</strong><br>
+        • Python desde cero<br>
+        • Tipos de datos y estructuras<br>
+        • Estadística descriptiva<br>
+        👉 <em>Objetivo:</em> entender Python como herramienta analítica.<br><br>
+
+        <strong>Nivel Intermedio – Análisis:</strong><br>
+        • pandas y numpy<br>
+        • Limpieza y transformación de datos<br>
+        • Visualización con matplotlib<br>
+        👉 <em>Objetivo:</em> analizar y visualizar datos reales.<br><br>
+
+        <strong>Nivel Avanzado – Machine Learning:</strong><br>
+        • Regresión y clasificación<br>
+        • Validación de modelos<br>
+        • Casos reales INEI<br>
+        👉 <em>Objetivo:</em> construir modelos predictivos aplicados.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+    </div>
+
+    <div class="detalle-curso" id="r">
+        <h3>Análisis de Datos con RStudio</h3>
+
+        <strong>Nivel Básico:</strong><br>
+        • Importación y limpieza de datos<br>
+        • Manipulación con tidyverse<br>
+        👉 <em>Objetivo:</em> preparar datos correctamente.<br><br>
+
+        <strong>Nivel Intermedio:</strong><br>
+        • Estadística descriptiva e inferencial<br>
+        • Visualización avanzada<br>
+        👉 <em>Objetivo:</em> interpretar resultados estadísticos.<br><br>
+
+        <strong>Nivel Avanzado:</strong><br>
+        • Modelos econométricos<br>
+        • ANOVA, regresión múltiple<br>
+        👉 <em>Objetivo:</em> análisis econométrico profesional.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+    </div>
+
+    <div class="detalle-curso" id="finanzas">
+        <h3>Gestión, Presupuesto y Finanzas</h3>
+
+        <strong>Básico:</strong> contabilidad, costos, ingresos<br>
+        <strong>Intermedio:</strong> presupuestos, flujo de caja<br>
+        <strong>Avanzado:</strong> planificación financiera y control<br>
+        👉 <em>Objetivo:</em> gestionar negocios y finanzas personales.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+    </div>
+
+    <div class="detalle-curso" id="electoral">
+        <h3>Procesos Electorales 2026</h3>
+
+        • Marco legal electoral peruano<br>
+        • Voto digital y padrón electoral<br>
+        • Análisis de resultados y auditoría<br>
+        👉 <em>Objetivo:</em> comprender y analizar procesos electorales.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+    </div>
+
+    <div class="detalle-curso" id="motivacion">
+        <h3>Motivación, Coaching y Ajedrez</h3>
+
+        • Coaching motivacional<br>
+        • Poemas y escritos reflexivos<br>
+        • Ajedrez como estrategia de vida<br>
+        👉 <em>Objetivo:</em> fortalecer mente, disciplina y propósito.<br><br>
+
+        ▶ <a href="https://youtube.com/" target="_blank">Videos (CAMBIA ESTE ENLACE)</a>
+    </div>
+
 </section>
 
-    
+        
 
 <!-- ================= TEMARIOS Y VIDEOS ================= -->
 <section id="temarios">
