@@ -1,379 +1,268 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- ================= SEO GENERAL ================= -->
-    <meta charset="UTF-8">
-    <title>Antenor Michael López Huiza | Economista | Plataforma Académica</title>
-    <meta name="description" content="Plataforma académica de Antenor Michael López Huiza. Cursos de Excel, Python, RStudio, Power BI, Procesos Electorales 2026, análisis económico, blog académico, coaching motivacional y ajedrez.">
-    <meta name="keywords" content="Economista peruano, cursos Excel, Python análisis de datos, RStudio, Power BI, Procesos Electorales 2026, coaching motivacional, ajedrez, poemas económicos">
-    <meta name="author" content="Antenor Michael López Huiza">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Antenor Michael López Huiza | Economista | Plataforma Académica</title>
 
-    <!-- ================= ESTILOS ================= -->
-    <style>
-        body {
-            margin: 0;
-            font-family: "Segoe UI", Arial, sans-serif;
-            background: #f4f6f8;
-            color: #1f2933;
-        }
+<meta name="description" content="Cursos profesionales de Excel, Python, RStudio, finanzas, procesos electorales, coaching motivacional y ajedrez. Asesoría financiera, académica y empresarial.">
+<meta name="keywords" content="Cursos Excel Perú, Python análisis de datos, RStudio econometría, asesoría financiera, Infocorp, coaching motivacional, ajedrez">
+<meta name="author" content="Antenor Michael López Huiza">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background: linear-gradient(135deg, #0a1f44, #123b7a);
-            color: white;
-            padding: 50px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-        }
+<style>
+body{
+    margin:0;
+    font-family:Segoe UI, Arial;
+    background:#f4f6f8;
+    color:#1f2933;
+}
+header{
+    background:linear-gradient(135deg,#0a1f44,#123b7a);
+    color:white;
+    padding:60px 40px;
+    display:flex;
+    gap:40px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.perfil-img{
+    width:280px;
+    height:280px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid white;
+}
+nav{
+    background:#020617;
+    padding:14px;
+    text-align:center;
+}
+nav a{
+    color:white;
+    margin:0 15px;
+    font-weight:bold;
+    text-decoration:none;
+}
+nav a:hover{color:#facc15;}
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 25px;
+}
+h2{
+    color:#0a1f44;
+    border-bottom:3px solid #0a1f44;
+    padding-bottom:8px;
+}
+.cursos-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+.curso-card{
+    background:white;
+    border-radius:14px;
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+    cursor:pointer;
+    overflow:hidden;
+    transition:.3s;
+}
+.curso-card:hover{transform:translateY(-6px);}
+.curso-card img{
+    width:100%;
+    height:160px;
+    object-fit:cover;
+}
+.curso-card div{
+    padding:18px;
+}
+.detalle-curso{
+    display:none;
+    background:white;
+    margin-top:40px;
+    padding:30px;
+    border-radius:14px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+.servicios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.card{
+    background:white;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 8px 16px rgba(0,0,0,.15);
+}
+.contacto{
+    background:#0a1f44;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+.contacto a{
+    background:#facc15;
+    padding:14px 26px;
+    margin:10px;
+    display:inline-block;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#111;
+}
+footer{
+    background:#020617;
+    color:#9ca3af;
+    text-align:center;
+    padding:20px;
+}
+</style>
 
-        .perfil-img {
-            width: 240px;
-            height: 240px;
-            object-fit: cover;
-            border-radius: 16px;
-            border: 5px solid white;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.35);
-        }
-
-        nav {
-            background: #020617;
-            padding: 14px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            margin: 0 16px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            color: #facc15;
-        }
-
-        section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 50px 25px;
-        }
-
-        h2 {
-            color: #0a1f44;
-            border-bottom: 3px solid #0a1f44;
-            padding-bottom: 6px;
-            margin-bottom: 25px;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 22px;
-        }
-
-        .card {
-            background: white;
-            padding: 22px;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-        }
-
-        .card a {
-            color: #1d4ed8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .card a:hover {
-            text-decoration: underline;
-        }
-
-        .contacto {
-            background: #0a1f44;
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-
-        .contacto a {
-            display: inline-block;
-            margin: 10px;
-            padding: 14px 26px;
-            background: #facc15;
-            color: #111;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-
-        footer {
-            background: #020617;
-            color: #9ca3af;
-            text-align: center;
-            padding: 18px;
-        }
-    </style>
+<script>
+function toggleDetalle(id){
+    document.querySelectorAll('.detalle-curso').forEach(d=>d.style.display='none');
+    document.getElementById(id).style.display='block';
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
 </head>
 
 <body>
 
 <header>
-    <div>
-        <h1>Antenor Michael López Huiza</h1>
-        <p>
-            Economista, analista de datos, docente e investigador.  
-            Coach motivacional y ajedrecista.  
-            Plataforma académica orientada a la formación profesional, análisis aplicado y desarrollo humano.
-        </p>
-    </div>
-    <img src="img/antenor.jpg" alt="Antenor Michael López Huiza" class="perfil-img">
+<div>
+<h1>Antenor Michael López Huiza</h1>
+<p><strong>Economista | Analista de Datos | Docente</strong></p>
+<p>
+La mejora continua es una decisión diaria.  
+Medir, analizar, aprender y amar la vida con disciplina, alegría y propósito.
+</p>
+</div>
+<img src="img/antenor.jpg" class="perfil-img" alt="Antenor Michael López Huiza">
 </header>
 
 <nav>
-    <a href="#cursos">Cursos</a>
-    <a href="#temarios">Temarios & Videos</a>
-    <a href="#documentos">Documentos</a>
-    <a href="#motivacion">Motivación & Ajedrez</a>
-    <a href="#contacto">Contacto</a>
+<a href="#cursos">Cursos</a>
+<a href="#servicios">Servicios</a>
+<a href="#documentos">Documentos</a>
+<a href="#contacto">Contacto</a>
 </nav>
 
-<!-- ================= CURSOS ================= -->
-
 <section id="cursos">
-    <h2>Cursos que Dicto</h2>
+<h2>Cursos que Dicto</h2>
 
-    <!-- ================= TARJETAS DE CURSOS ================= -->
-    <div class="cursos-grid-horizontal">
+<div class="cursos-grid">
 
-        <div class="curso-card" onclick="toggleDetalle('excel')">
-            <img src="img/excel.jpg" alt="Excel para Economistas">
-            <h3>Excel para Economistas y Negocios</h3>
-            <p>Herramienta clave para análisis financiero y gestión</p>
-        </div>
+<div class="curso-card" onclick="toggleDetalle('excel')">
+<img src="img/excel.jpg">
+<div>
+<h3>Excel Profesional y Financiero</h3>
+<p>Análisis, presupuestos y modelos</p>
+</div>
+</div>
 
-        <div class="curso-card" onclick="toggleDetalle('python')">
-            <img src="img/python.jpg" alt="Python análisis de datos">
-            <h3>Análisis de Datos con Python</h3>
-            <p>Estadística, machine learning y casos reales</p>
-        </div>
+<div class="curso-card" onclick="toggleDetalle('python')">
+<img src="img/python.jpg">
+<div>
+<h3>Python para Análisis de Datos</h3>
+<p>Estadística y Machine Learning</p>
+</div>
+</div>
 
-        <div class="curso-card" onclick="toggleDetalle('r')">
-            <img src="img/rstudio.jpg" alt="RStudio análisis econométrico">
-            <h3>Análisis de Datos con RStudio</h3>
-            <p>Econometría aplicada y análisis estadístico</p>
-        </div>
+<div class="curso-card" onclick="toggleDetalle('rstudio')">
+<img src="img/rstudio.jpg">
+<div>
+<h3>RStudio y Econometría</h3>
+<p>Modelos estadísticos aplicados</p>
+</div>
+</div>
 
-        <div class="curso-card" onclick="toggleDetalle('finanzas')">
-            <img src="img/finanzas.jpg" alt="Gestión financiera">
-            <h3>Gestión, Presupuesto y Finanzas</h3>
-            <p>Negocios, planificación y control financiero</p>
-        </div>
+<div class="curso-card" onclick="toggleDetalle('finanzas')">
+<img src="img/finanzas.jpg">
+<div>
+<h3>Gestión y Finanzas</h3>
+<p>Negocios y planificación</p>
+</div>
+</div>
 
-        <div class="curso-card" onclick="toggleDetalle('electoral')">
-            <img src="img/electoral.jpg" alt="Procesos electorales">
-            <h3>Procesos Electorales 2026</h3>
-            <p>Sistema electoral, datos y transparencia</p>
-        </div>
+<div class="curso-card" onclick="toggleDetalle('motivacion')">
+<img src="img/motivacion.jpg">
+<div>
+<h3>Motivación y Ajedrez</h3>
+<p>Mente estratégica y disciplina</p>
+</div>
+</div>
 
-        <div class="curso-card" onclick="toggleDetalle('motivacion')">
-            <img src="img/motivacion.jpg" alt="Motivación y ajedrez">
-            <h3>Motivación, Coaching y Ajedrez</h3>
-            <p>Desarrollo personal y pensamiento estratégico</p>
-        </div>
+</div>
 
-    </div>
+<!-- DETALLES -->
+<div class="detalle-curso" id="excel">
+<h3>Excel Profesional y Financiero</h3>
+<strong>Básico:</strong> fórmulas, lógica, tablas, gráficos<br>
+<strong>Intermedio:</strong> presupuestos, dashboards, análisis financiero<br>
+<strong>Avanzado:</strong> modelos financieros, evaluación de proyectos, VBA<br>
+🎯 Objetivo: dominar Excel como herramienta profesional<br>
+▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+</div>
 
-    <!-- ================= TEMARIOS ================= -->
+<div class="detalle-curso" id="python">
+<h3>Python para Análisis de Datos</h3>
+<strong>Básico:</strong> Python desde cero, estadística<br>
+<strong>Intermedio:</strong> pandas, limpieza, visualización<br>
+<strong>Avanzado:</strong> ML, regresión, clasificación, INEI<br>
+▶ <a href="https://youtube.com/">Clases (CAMBIA ESTE ENLACE)</a>
+</div>
 
-    <div class="detalle-curso" id="excel">
-        <h3>Excel para Economistas y Negocios</h3>
+<div class="detalle-curso" id="rstudio">
+<h3>RStudio y Econometría</h3>
+<strong>Básico:</strong> limpieza y visualización<br>
+<strong>Intermedio:</strong> inferencia estadística<br>
+<strong>Avanzado:</strong> regresión, modelos econométricos<br>
+▶ <a href="https://youtube.com/">Clases (CAMBIA ESTE ENLACE)</a>
+</div>
 
-        <strong>Nivel Básico – Fundamentos:</strong><br>
-        • Entorno de Excel y lógica de hojas<br>
-        • Fórmulas y funciones esenciales<br>
-        • Tablas, formatos y validación de datos<br>
-        👉 <em>Objetivo:</em> dominar Excel como herramienta básica de trabajo profesional.<br><br>
+<div class="detalle-curso" id="finanzas">
+<h3>Gestión y Finanzas</h3>
+Presupuesto, flujo de caja, planificación financiera<br>
+▶ <a href="https://youtube.com/">Clases (CAMBIA ESTE ENLACE)</a>
+</div>
 
-        <strong>Nivel Intermedio – Análisis:</strong><br>
-        • Tablas dinámicas y segmentadores<br>
-        • Presupuestos y control de gastos<br>
-        • Análisis de escenarios y gráficos<br>
-        👉 <em>Objetivo:</em> analizar información y apoyar decisiones económicas.<br><br>
-
-        <strong>Nivel Avanzado – Finanzas:</strong><br>
-        • Excel financiero y proyecciones<br>
-        • Modelos de evaluación de proyectos<br>
-        • Macros y VBA básico<br>
-        👉 <em>Objetivo:</em> automatizar y construir modelos profesionales.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Clases en YouTube (CAMBIA ESTE ENLACE)</a><br>
-        📄 <a href="#" target="_blank">Material descargable (CAMBIA ESTE ENLACE)</a>
-    </div>
-
-    <div class="detalle-curso" id="python">
-        <h3>Análisis de Datos con Python</h3>
-
-        <strong>Nivel Básico – Programación:</strong><br>
-        • Python desde cero<br>
-        • Tipos de datos y estructuras<br>
-        • Estadística descriptiva<br>
-        👉 <em>Objetivo:</em> entender Python como herramienta analítica.<br><br>
-
-        <strong>Nivel Intermedio – Análisis:</strong><br>
-        • pandas y numpy<br>
-        • Limpieza y transformación de datos<br>
-        • Visualización con matplotlib<br>
-        👉 <em>Objetivo:</em> analizar y visualizar datos reales.<br><br>
-
-        <strong>Nivel Avanzado – Machine Learning:</strong><br>
-        • Regresión y clasificación<br>
-        • Validación de modelos<br>
-        • Casos reales INEI<br>
-        👉 <em>Objetivo:</em> construir modelos predictivos aplicados.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-    </div>
-
-    <div class="detalle-curso" id="r">
-        <h3>Análisis de Datos con RStudio</h3>
-
-        <strong>Nivel Básico:</strong><br>
-        • Importación y limpieza de datos<br>
-        • Manipulación con tidyverse<br>
-        👉 <em>Objetivo:</em> preparar datos correctamente.<br><br>
-
-        <strong>Nivel Intermedio:</strong><br>
-        • Estadística descriptiva e inferencial<br>
-        • Visualización avanzada<br>
-        👉 <em>Objetivo:</em> interpretar resultados estadísticos.<br><br>
-
-        <strong>Nivel Avanzado:</strong><br>
-        • Modelos econométricos<br>
-        • ANOVA, regresión múltiple<br>
-        👉 <em>Objetivo:</em> análisis econométrico profesional.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-    </div>
-
-    <div class="detalle-curso" id="finanzas">
-        <h3>Gestión, Presupuesto y Finanzas</h3>
-
-        <strong>Básico:</strong> contabilidad, costos, ingresos<br>
-        <strong>Intermedio:</strong> presupuestos, flujo de caja<br>
-        <strong>Avanzado:</strong> planificación financiera y control<br>
-        👉 <em>Objetivo:</em> gestionar negocios y finanzas personales.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-    </div>
-
-    <div class="detalle-curso" id="electoral">
-        <h3>Procesos Electorales 2026</h3>
-
-        • Marco legal electoral peruano<br>
-        • Voto digital y padrón electoral<br>
-        • Análisis de resultados y auditoría<br>
-        👉 <em>Objetivo:</em> comprender y analizar procesos electorales.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
-    </div>
-
-    <div class="detalle-curso" id="motivacion">
-        <h3>Motivación, Coaching y Ajedrez</h3>
-
-        • Coaching motivacional<br>
-        • Poemas y escritos reflexivos<br>
-        • Ajedrez como estrategia de vida<br>
-        👉 <em>Objetivo:</em> fortalecer mente, disciplina y propósito.<br><br>
-
-        ▶ <a href="https://youtube.com/" target="_blank">Videos (CAMBIA ESTE ENLACE)</a>
-    </div>
+<div class="detalle-curso" id="motivacion">
+<h3>Motivación y Ajedrez</h3>
+Coaching, poemas, disciplina mental, estrategia<br>
+▶ <a href="https://youtube.com/">Videos (CAMBIA ESTE ENLACE)</a>
+</div>
 
 </section>
 
-        
-
-<!-- ================= TEMARIOS Y VIDEOS ================= -->
-<section id="temarios">
-    <h2>Temarios y Videos por Curso</h2>
-
-    <div class="card">
-        <h3>Excel para Economistas</h3>
-        <ul>
-            <li>Introducción a Excel – <a href="https://youtube.com/XXXX">Ver video</a> <!-- cambia este enlace por el tuyo --></li>
-            <li>Tablas dinámicas – <a href="https://youtube.com/XXXX">Ver video</a></li>
-            <li>Modelos financieros – <a href="https://youtube.com/XXXX">Ver video</a></li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Python para Análisis de Datos</h3>
-        <ul>
-            <li>Python básico – <a href="https://youtube.com/XXXX">Ver video</a></li>
-            <li>Pandas y Numpy – <a href="https://youtube.com/XXXX">Ver video</a></li>
-            <li>Regresión y ML – <a href="https://youtube.com/XXXX">Ver video</a></li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>Procesos Electorales 2026</h3>
-        <ul>
-            <li>Marco legal electoral – <a href="https://youtube.com/XXXX">Ver video</a></li>
-            <li>Voto digital – <a href="https://youtube.com/XXXX">Ver video</a></li>
-            <li>Análisis de resultados – <a href="https://youtube.com/XXXX">Ver video</a></li>
-        </ul>
-    </div>
+<section id="servicios">
+<h2>Servicios Profesionales</h2>
+<div class="servicios-grid">
+<div class="card">✔ Evaluación financiera en Infocorp</div>
+<div class="card">✔ Acceso al sistema financiero</div>
+<div class="card">✔ Asesoría en gestión de negocios</div>
+<div class="card">✔ Asesoría académica por horas</div>
+<div class="card">✔ Evaluación de inquilinos y arrendamientos</div>
+</div>
 </section>
 
-<!-- ================= DOCUMENTOS ================= -->
 <section id="documentos">
-    <h2>Documentos y Publicaciones</h2>
-
-    <div class="card">
-        <p>📄 Econometría aplicada con R  
-        <a href="https://drive.google.com/XXXX">Descargar</a> <!-- cambia este enlace por el tuyo --></p>
-    </div>
-
-    <div class="card">
-        <p>📄 Análisis de datos INEI  
-        <a href="https://drive.google.com/XXXX">Descargar</a></p>
-    </div>
+<h2>Documentos</h2>
+<div class="card">
+📄 Análisis económico aplicado  
+<a href="#">Descargar (CAMBIA ESTE ENLACE)</a>
+</div>
 </section>
 
-<!-- ================= MOTIVACIÓN Y AJEDREZ ================= -->
-<section id="motivacion">
-    <h2>Motivación, Poemas y Ajedrez</h2>
-
-    <div class="card">
-        <h3>Coaching Motivacional</h3>
-        <p>Videos y reflexiones sobre disciplina, constancia y propósito.</p>
-        <a href="https://youtube.com/XXXX">Ver canal</a> <!-- cambia este enlace por el tuyo -->
-    </div>
-
-    <div class="card">
-        <h3>Poemas y Escritos</h3>
-        <p>Economía, vida y resiliencia en versos.</p>
-        <a href="#">Leer poemas</a>
-    </div>
-
-    <div class="card">
-        <h3>Ajedrez</h3>
-        <p>Estrategia, pensamiento lógico y toma de decisiones.</p>
-        <a href="https://youtube.com/XXXX">Ver partidas y análisis</a>
-    </div>
-</section>
-
-<!-- ================= CONTACTO ================= -->
 <div class="contacto" id="contacto">
-    <h2>Solicitar Información</h2>
-    <a href="https://wa.me/51973932328" target="_blank">WhatsApp Directo</a>
-    <a href="mailto:asesoriaacademica.economia@gmail.com">Enviar Correo</a>
+<h2>Contacto Directo</h2>
+<a href="https://wa.me/51973932328">WhatsApp</a>
+<a href="mailto:asesoriaacademica.economia@gmail.com">Correo</a>
 </div>
 
 <footer>
-    © 2026 Antenor Michael López Huiza | Plataforma Académica Integral
+© 2026 Antenor Michael López Huiza
 </footer>
 
 </body>
