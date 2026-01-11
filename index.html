@@ -141,16 +141,152 @@
 </nav>
 
 <!-- ================= CURSOS ================= -->
+
 <section id="cursos">
     <h2>Cursos que Dicto</h2>
-    <div class="grid">
-        <div class="card"><strong>Excel para Economistas</strong></div>
-        <div class="card"><strong>Python para Análisis de Datos</strong></div>
-        <div class="card"><strong>RStudio y Econometría</strong></div>
-        <div class="card"><strong>Power BI</strong></div>
-        <div class="card"><strong>Procesos Electorales 2026</strong></div>
+
+    <div class="cursos-grid">
+
+        <!-- ================= EXCEL ================= -->
+        <div class="curso" onclick="toggleDetalle('excel')">
+            <h3>Excel para Economistas y Negocios</h3>
+            <p>Básico – Intermedio – Avanzado</p>
+            <div class="detalle" id="excel">
+
+                <strong>BÁSICO</strong><br>
+                • Introducción a Excel<br>
+                • Fórmulas y funciones básicas<br>
+                • Tablas y formatos<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
+                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>INTERMEDIO</strong><br>
+                • Tablas dinámicas<br>
+                • Funciones financieras (VAN, TIR)<br>
+                • Presupuestos y dashboards<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
+                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>AVANZADO</strong><br>
+                • Excel financiero<br>
+                • Proyecciones económicas<br>
+                • Macros y VBA<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Ver clases (CAMBIA ESTE ENLACE)</a><br>
+                📄 <a href="#" target="_blank">Material PDF (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
+        <!-- ================= PYTHON ================= -->
+        <div class="curso" onclick="toggleDetalle('python')">
+            <h3>Análisis de Datos con Python</h3>
+            <p>Estadística, ML y visualización</p>
+            <div class="detalle" id="python">
+
+                <strong>BÁSICO</strong><br>
+                • Introducción a Python<br>
+                • Estadística descriptiva<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>INTERMEDIO</strong><br>
+                • Pandas y Numpy<br>
+                • Limpieza de datos<br>
+                • Visualización<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>AVANZADO</strong><br>
+                • Regresión y clasificación<br>
+                • Machine Learning<br>
+                • Casos INEI<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
+        <!-- ================= RSTUDIO ================= -->
+        <div class="curso" onclick="toggleDetalle('r')">
+            <h3>Análisis de Datos con RStudio</h3>
+            <p>Estadística y econometría</p>
+            <div class="detalle" id="r">
+
+                <strong>BÁSICO</strong><br>
+                • Introducción a R<br>
+                • Importación de datos<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>INTERMEDIO</strong><br>
+                • Limpieza de datos<br>
+                • Visualización con ggplot2<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br><br>
+
+                <strong>AVANZADO</strong><br>
+                • Econometría aplicada<br>
+                • Informes reproducibles<br>
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
+        <!-- ================= GESTIÓN Y FINANZAS ================= -->
+        <div class="curso" onclick="toggleDetalle('finanzas')">
+            <h3>Gestión, Finanzas y Presupuesto</h3>
+            <p>Excel financiero y planificación</p>
+            <div class="detalle" id="finanzas">
+
+                <strong>BÁSICO</strong><br>
+                • Costos, ingresos y utilidades<br>
+                • Contabilidad básica<br><br>
+
+                <strong>INTERMEDIO</strong><br>
+                • Presupuestos<br>
+                • Flujo de caja<br><br>
+
+                <strong>AVANZADO</strong><br>
+                • Planeamiento financiero<br>
+                • Evaluación de proyectos<br>
+
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br>
+                📄 <a href="#" target="_blank">Documentos (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
+        <!-- ================= ELECTORAL ================= -->
+        <div class="curso" onclick="toggleDetalle('electoral')">
+            <h3>Procesos Electorales 2026</h3>
+            <p>Análisis técnico y normativo</p>
+            <div class="detalle" id="electoral">
+
+                • Sistema electoral peruano<br>
+                • Padrón y voto digital<br>
+                • Auditoría y transparencia<br>
+
+                ▶ <a href="https://youtube.com/" target="_blank">Clases (CAMBIA ESTE ENLACE)</a><br>
+                📄 <a href="#" target="_blank">Documentos (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
+        <!-- ================= MOTIVACIÓN Y AJEDREZ ================= -->
+        <div class="curso" onclick="toggleDetalle('motivacion')">
+            <h3>Motivación, Coaching y Ajedrez</h3>
+            <p>Desarrollo personal y estrategia</p>
+            <div class="detalle" id="motivacion">
+
+                • Coaching motivacional<br>
+                • Poemas y escritos reflexivos<br>
+                • Ajedrez como estrategia de vida<br>
+
+                ▶ <a href="https://youtube.com/" target="_blank">Videos (CAMBIA ESTE ENLACE)</a><br>
+                ✍ <a href="#" target="_blank">Lecturas (CAMBIA ESTE ENLACE)</a>
+
+            </div>
+        </div>
+
     </div>
 </section>
+
+    
 
 <!-- ================= TEMARIOS Y VIDEOS ================= -->
 <section id="temarios">
