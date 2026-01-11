@@ -1,11 +1,241 @@
-"contacto">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Antenor Michael López Huiza | Economista | Cursos y Asesoría Profesional</title>
+
+<meta name="description" content="Cursos de Excel, Python, RStudio, asesoría financiera, capacitación empresarial y blog motivacional de Antenor Michael López Huiza.">
+<meta name="keywords" content="Economista Perú, cursos Excel, Python análisis de datos, asesoría financiera, coaching motivacional">
+<meta name="author" content="Antenor Michael López Huiza">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{margin:0;font-family:Segoe UI,Arial;background:#f4f6f8;color:#1f2933;}
+header{background:linear-gradient(135deg,#0a1f44,#123b7a);color:white;padding:60px 40px;display:flex;gap:40px;align-items:center;flex-wrap:wrap;}
+.perfil-img{width:320px;height:320px;object-fit:cover;border-radius:24px;border:5px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,.35);}
+nav{background:#020617;padding:15px;text-align:center;}
+nav a{color:white;margin:0 16px;font-weight:bold;text-decoration:none;}
+nav a:hover{color:#facc15;}
+section{max-width:1200px;margin:auto;padding:60px 25px;}
+h2{color:#0a1f44;border-bottom:3px solid #0a1f44;padding-bottom:8px;margin-bottom:30px;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px;}
+.card{background:white;border-radius:16px;box-shadow:0 10px 20px rgba(0,0,0,.15);cursor:pointer;overflow:hidden;transition:.3s;}
+.card:hover{transform:translateY(-6px);}
+.card img{width:100%;height:160px;object-fit:cover;}
+.card div{padding:18px;}
+.detalle{display:none;margin-top:40px;padding:30px;border-radius:16px;background:#fffbe6;border-left:10px solid #facc15;box-shadow:0 12px 28px rgba(0,0,0,.25);}
+.detalle ul{padding-left:20px;}
+.detalle li{margin-bottom:6px;}
+.contacto{background:#0a1f44;color:white;text-align:center;padding:60px 20px;}
+.contacto a{background:#facc15;color:#111;padding:14px 26px;margin:10px;display:inline-block;border-radius:8px;font-weight:bold;text-decoration:none;}
+footer{background:#020617;color:#9ca3af;text-align:center;padding:20px;}
+</style>
+
+<script>
+function toggle(id){
+document.querySelectorAll('.detalle').forEach(d=>d.style.display='none');
+document.getElementById(id).style.display='block';
+document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<div>
+<h1>Antenor Michael López Huiza</h1>
+<p><strong>Economista | Analista de Datos | Docente</strong></p>
+<p>
+La mejora continua nace de medir, analizar y actuar.<br>
+Trabaja con indicadores, ama la vida y celebra cada avance.
+</p>
+</div>
+<img src="img/antenor.jpg" alt="Antenor Michael López Huiza" class="perfil-img">
+</header>
+
+<nav>
+<a href="#cursos">Cursos</a>
+<a href="#servicios">Servicios</a>
+<a href="#blog">Blog</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+<!-- ================= CURSOS ================= -->
+<section id="cursos">
+<h2>Cursos que Dicto</h2>
+
+<div class="grid">
+
+<div class="card" onclick="toggle('excel')">
+<img src="img/excel.jpg">
+<div><h3>Excel Profesional y Financiero</h3></div>
+</div>
+
+<div class="card" onclick="toggle('python')">
+<img src="img/python.jpg">
+<div><h3>Python para Análisis de Datos</h3></div>
+</div>
+
+<div class="card" onclick="toggle('rstudio')">
+<img src="img/rstudio.jpg">
+<div><h3>RStudio y Econometría</h3></div>
+</div>
+
+</div>
+
+<!-- ===== TEMARIOS ===== -->
+
+<div class="detalle" id="excel">
+<h3>📘 TEMARIO – Excel Profesional y Financiero</h3>
+
+<strong>BÁSICO</strong>
+<ul>
+<li>Introducción a Excel – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Fórmulas y funciones – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Tablas y gráficos – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>INTERMEDIO</strong>
+<ul>
+<li>Tablas dinámicas – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Presupuestos y control – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Análisis financiero – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>AVANZADO</strong>
+<ul>
+<li>Modelos financieros – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Evaluación de proyectos – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Macros y VBA – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<p><em>🎯 Objetivo: tomar decisiones financieras sólidas con Excel.</em></p>
+</div>
+
+<div class="detalle" id="python">
+<h3>📘 TEMARIO – Python para Análisis de Datos</h3>
+
+<strong>BÁSICO</strong>
+<ul>
+<li>Python desde cero – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Estadística descriptiva – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>INTERMEDIO</strong>
+<ul>
+<li>Pandas y limpieza – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Visualización de datos – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>AVANZADO</strong>
+<ul>
+<li>Regresión y clasificación – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+<li>Machine Learning – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<p><em>🎯 Objetivo: analizar datos reales y crear modelos predictivos.</em></p>
+</div>
+
+<div class="detalle" id="rstudio">
+<h3>📘 TEMARIO – RStudio y Econometría</h3>
+
+<strong>BÁSICO</strong>
+<ul>
+<li>Limpieza y visualización – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>INTERMEDIO</strong>
+<ul>
+<li>Inferencia estadística – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<strong>AVANZADO</strong>
+<ul>
+<li>Modelos econométricos – <a href="#">YouTube</a> | <a href="#">PDF</a></li>
+</ul>
+
+<p><em>🎯 Objetivo: análisis econométrico aplicado a economía y negocios.</em></p>
+</div>
+
+</section>
+
+<!-- ================= SERVICIOS ================= -->
+<section id="servicios">
+<h2>Servicios Profesionales</h2>
+
+<div class="grid">
+
+<div class="card" onclick="toggle('serv1')">
+<img src="img/servicios.jpg">
+<div><h3>Capacitación y Gestión Empresarial</h3></div>
+</div>
+
+<div class="card" onclick="toggle('serv2')">
+<img src="img/servicios.jpg">
+<div><h3>Finanzas, Presupuesto e Infocorp</h3></div>
+</div>
+
+<div class="card" onclick="toggle('serv3')">
+<img src="img/servicios.jpg">
+<div><h3>Asesoría Académica Especializada</h3></div>
+</div>
+
+</div>
+
+<div class="detalle" id="serv1">
+❌ Negocios sin control ni planificación  
+<br>✅ Capacitación en gestión, costos, ventas y planificación  
+<br>🎯 Resultado: negocios sostenibles y rentables
+</div>
+
+<div class="detalle" id="serv2">
+❌ Problemas crediticios e Infocorp  
+<br>✅ Evaluación financiera y estrategia de inserción  
+<br>🎯 Resultado: acceso al sistema financiero
+</div>
+
+<div class="detalle" id="serv3">
+Microeconomía · Macroeconomía · IO · Contabilidad  
+<br>Tributación · Estudio de mercado · Análisis de datos  
+<br>🎯 Resultado: comprensión clara y aplicada
+</div>
+
+</section>
+
+<!-- ================= BLOG ================= -->
+<section id="blog">
+<h2>Blog y Escritos</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="img/blog.jpg">
+<div>
+<h3>Poemas y Escritos Motivacionales</h3>
+<a href="#">Leer (CAMBIA ESTE ENLACE)</a>
+</div>
+</div>
+
+<div class="card">
+<img src="img/blog.jpg">
+<div>
+<h3>Notas Académicas</h3>
+<a href="#">Leer (CAMBIA ESTE ENLACE)</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<div class="contacto" id="contacto">
 <h2>Contacto Directo</h2>
 <a href="https://wa.me/51973932328">WhatsApp</a>
 <a href="mailto:asesoriaacademica.economia@gmail.com">Correo</a>
 </div>
 
 <footer>
-© 2026 Antenor Michael López Huiza
+© 2026 Antenor Michael López Huiza | Plataforma Académica Profesional
 </footer>
 
 </body>
